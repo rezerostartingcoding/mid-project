@@ -1,0 +1,2663 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='WHR_2018_2022' inline='true' name='federated.156elov1fabnku1b99cwk0m1bimc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WHR_2018_2022' name='textscan.0foj8b51yudgqg164flv31tjktkk'>
+            <connection class='textscan' directory='C:/Users/user/Downloads' filename='WHR_2018_2022.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0foj8b51yudgqg164flv31tjktkk' name='WHR_2018_2022.csv' table='[WHR_2018_2022#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='string' name='region' ordinal='1' />
+            <column datatype='real' name='happiness_score' ordinal='2' />
+            <column datatype='real' name='gdp_per_capita' ordinal='3' />
+            <column datatype='real' name='social_support' ordinal='4' />
+            <column datatype='real' name='healthy_life_expectancy' ordinal='5' />
+            <column datatype='real' name='freedom_to_make_life_choices' ordinal='6' />
+            <column datatype='real' name='generosity' ordinal='7' />
+            <column datatype='real' name='perceptions_of_corruption' ordinal='8' />
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>happiness_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[happiness_score]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>happiness_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdp_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp_per_capita]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>gdp_per_capita</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>social_support</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[social_support]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>social_support</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>healthy_life_expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[healthy_life_expectancy]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>healthy_life_expectancy</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freedom_to_make_life_choices</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freedom_to_make_life_choices]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>freedom_to_make_life_choices</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generosity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[generosity]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>generosity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perceptions_of_corruption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perceptions_of_corruption]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>perceptions_of_corruption</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[WHR_2018_2022.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='상관계수' datatype='real' name='[Calculation_442197246074093568]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([perceptions_of_corruption],[happiness_score])' />
+      </column>
+      <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+      </column>
+      <column caption='Country(2 복사본)' datatype='string' name='[Country(2 복사본)_442197246086750215]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='tableau' formula='[country]' />
+      </column>
+      <column caption='Country(복사본)' datatype='string' name='[Country(복사본)_442197246086737926]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='tableau' formula='[country]' />
+      </column>
+      <column caption='WHR_2018_2022.csv' datatype='table' name='[__tableau_internal_object_id__].[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+          <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+          <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Freedom To Make Life Choices' datatype='real' name='[freedom_to_make_life_choices]' role='measure' type='quantitative' />
+      <column caption='Gdp Per Capita' datatype='real' name='[gdp_per_capita]' role='measure' type='quantitative' />
+      <column caption='Generosity' datatype='real' name='[generosity]' role='measure' type='quantitative' />
+      <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+      <column caption='Healthy Life Expectancy' datatype='real' name='[healthy_life_expectancy]' role='measure' type='quantitative' />
+      <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Social Support' datatype='real' name='[social_support]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+      <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+      </column>
+      <column caption='행복지수차(절대값)' datatype='real' name='[행복점수차(복사본)_442197246081196036]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ABS(SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END))' />
+      </column>
+      <column caption='부패인식지수차(절대값)' datatype='real' name='[행복점수차(절대값)(복사본)_442197246082625541]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ABS(SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END))' />
+      </column>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1lpc2z817bnnag1fblscs1vmiqb5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/16/2025 12:51:11 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy' name='year' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>157</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>happiness_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[happiness_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>happiness_score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>698</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdp_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdp_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdp_per_capita</remote-alias>
+              <ordinal>3</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>660</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>social_support</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[social_support]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>social_support</remote-alias>
+              <ordinal>4</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>620</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>healthy_life_expectancy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[healthy_life_expectancy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>healthy_life_expectancy</remote-alias>
+              <ordinal>5</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>558</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freedom_to_make_life_choices</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[freedom_to_make_life_choices]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>freedom_to_make_life_choices</remote-alias>
+              <ordinal>6</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>525</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>generosity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[generosity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>generosity</remote-alias>
+              <ordinal>7</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>432</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>perceptions_of_corruption</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[perceptions_of_corruption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>perceptions_of_corruption</remote-alias>
+              <ordinal>8</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>9</ordinal>
+              <family>WHR_2018_2022.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <object-id>[WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='country' />
+        <field-sort-custom-order field='Country(2 복사본)_442197246086750215' />
+        <field-sort-custom-order field='Country(복사본)_442197246086737926' />
+        <field-sort-custom-order field='region' />
+        <field-sort-custom-order field='happiness_score' />
+        <field-sort-custom-order field='Calculation_442197246078742529' />
+        <field-sort-custom-order field='행복점수차(복사본)_442197246081196036' />
+        <field-sort-custom-order field='행복점수차(절대값)(복사본)_442197246082625541' />
+        <field-sort-custom-order field='행복점수차(복사본)_442197246080475139' />
+        <field-sort-custom-order field='gdp_per_capita' />
+        <field-sort-custom-order field='social_support' />
+        <field-sort-custom-order field='healthy_life_expectancy' />
+        <field-sort-custom-order field='freedom_to_make_life_choices' />
+        <field-sort-custom-order field='generosity' />
+        <field-sort-custom-order field='perceptions_of_corruption' />
+        <field-sort-custom-order field='Calculation_442197246074093568' />
+        <field-sort-custom-order field='year' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='WHR_2018_2022.csv' id='WHR_2018_2022.csv_CC5B17C401744A4494525574830CADBE'>
+            <properties context=''>
+              <relation connection='textscan.0foj8b51yudgqg164flv31tjktkk' name='WHR_2018_2022.csv' table='[WHR_2018_2022#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='string' name='region' ordinal='1' />
+                  <column datatype='real' name='happiness_score' ordinal='2' />
+                  <column datatype='real' name='gdp_per_capita' ordinal='3' />
+                  <column datatype='real' name='social_support' ordinal='4' />
+                  <column datatype='real' name='healthy_life_expectancy' ordinal='5' />
+                  <column datatype='real' name='freedom_to_make_life_choices' ordinal='6' />
+                  <column datatype='real' name='generosity' ordinal='7' />
+                  <column datatype='real' name='perceptions_of_corruption' ordinal='8' />
+                  <column datatype='date' date-parse-format='yyyy' name='year' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='year' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;부패인식지수맵&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column-instance column='[perceptions_of_corruption]' derivation='Avg' name='[avg:perceptions_of_corruption:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]' field-type='quantitative' max='43185090.804816738' min='-9365490.3514129203' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]' field-type='quantitative' max='20686298.728648804' min='-9793892.5715632141' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.156elov1fabnku1b99cwk0m1bimc].[avg:perceptions_of_corruption:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e9d2d2</color>
+                <color>#e2b5b5</color>
+                <color>#db9999</color>
+                <color>#d47f7f</color>
+                <color>#cd6666</color>
+                <color>#c64f4f</color>
+                <color>#bf3939</color>
+                <color>#b82424</color>
+                <color>#b11111</color>
+                <color>#aa0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+              <color column='[federated.156elov1fabnku1b99cwk0m1bimc].[avg:perceptions_of_corruption:qk]' />
+              <geometry column='[federated.156elov1fabnku1b99cwk0m1bimc].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{3F13E702-BD36-4283-ACBA-8BE6E498CC1A}' />
+    </worksheet>
+    <worksheet name='시트 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;행복지수맵&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column-instance column='[happiness_score]' derivation='Avg' name='[avg:happiness_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[yr:year:ok]'>
+            <groupfilter function='member' level='[yr:year:ok]' member='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[yr:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]' field-type='quantitative' max='40650186.111193202' min='-6379378.7206363771' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]' field-type='quantitative' max='19012584.963951863' min='-12122727.752238825' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.156elov1fabnku1b99cwk0m1bimc].[avg:happiness_score:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#0000ff</color>
+                <color>#2929f8</color>
+                <color>#5050f2</color>
+                <color>#7676ec</color>
+                <color>#9999e5</color>
+                <color>#babadf</color>
+                <color>#d9d9d9</color>
+                <color>#dfdfcc</color>
+                <color>#e5e5bf</color>
+                <color>#ececb0</color>
+                <color>#f2f2a1</color>
+                <color>#f8f890</color>
+                <color>#ffff7f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+              <color column='[federated.156elov1fabnku1b99cwk0m1bimc].[avg:happiness_score:qk]' />
+              <geometry column='[federated.156elov1fabnku1b99cwk0m1bimc].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9645D4F3-F9D7-4B59-A68D-3A5D6D2762B5}' />
+    </worksheet>
+    <worksheet name='시트 13'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<부패인식지수 변화가 가장 큰 TOP 20과 행복지수 변화가 가장 큰 TOP20 둘 다에 해당하는 국가>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='Country(2 복사본)' datatype='string' name='[Country(2 복사본)_442197246086750215]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country(복사본)' datatype='string' name='[Country(복사본)_442197246086737926]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[Country(2 복사본)_442197246086750215]' derivation='None' name='[none:Country(2 복사본)_442197246086750215:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country(복사본)_442197246086737926]' derivation='None' name='[none:Country(복사본)_442197246086737926:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='행복지수차(절대값)' datatype='real' name='[행복점수차(복사본)_442197246081196036]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ABS(SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END))' />
+            </column>
+            <column caption='부패인식지수차(절대값)' datatype='real' name='[행복점수차(절대값)(복사본)_442197246082625541]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ABS(SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END))' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(절대값)(복사본)_442197246082625541]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(2 복사본)_442197246086750215:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246081196036]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(복사본)_442197246086737926:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]</column>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]' field-type='quantitative' max='8305142.2653624779' min='879651.39106407901' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]' field-type='quantitative' max='6585982.4609019374' min='2881020.4773671757' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <text column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]' />
+              <geometry column='[federated.156elov1fabnku1b99cwk0m1bimc].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{90F4DB35-57FC-40A3-A6BD-60CE4D6053DC}' />
+    </worksheet>
+    <worksheet name='시트 13 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<가장 행복해진 TOP 20과 부패인식이 높아진 TOP20 둘 다에 해당하는 국가>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country(2 복사본)' datatype='string' name='[Country(2 복사본)_442197246086750215]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country(복사본)' datatype='string' name='[Country(복사본)_442197246086737926]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[Country(2 복사본)_442197246086750215]' derivation='None' name='[none:Country(2 복사본)_442197246086750215:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country(복사본)_442197246086737926]' derivation='None' name='[none:Country(복사본)_442197246086737926:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_442197246078742529]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(2 복사본)_442197246086750215:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246080475139]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(복사본)_442197246086737926:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]</column>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <text column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]' />
+              <geometry column='[federated.156elov1fabnku1b99cwk0m1bimc].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{85ADA555-B9C7-4BEC-A11E-5318FACA241A}' />
+    </worksheet>
+    <worksheet name='시트 13 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<가장 불행해진 TOP 20과 부패인식이 높아진 TOP20 둘 다에 해당하는 국가>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country(2 복사본)' datatype='string' name='[Country(2 복사본)_442197246086750215]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country(복사본)' datatype='string' name='[Country(복사본)_442197246086737926]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[Country(2 복사본)_442197246086750215]' derivation='None' name='[none:Country(2 복사본)_442197246086750215:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country(복사본)_442197246086737926]' derivation='None' name='[none:Country(복사본)_442197246086737926:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]'>
+            <groupfilter count='20' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_442197246078742529]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(2 복사본)_442197246086750215:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246080475139]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(복사본)_442197246086737926:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]</column>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B24EDAFD-0D89-4457-8A23-37C3D97AE307}' />
+    </worksheet>
+    <worksheet name='시트 13 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<가장 불행해진 TOP 20과 부패인식이 낮아진 TOP20 둘 다에 해당하는 국가>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country(2 복사본)' datatype='string' name='[Country(2 복사본)_442197246086750215]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country(복사본)' datatype='string' name='[Country(복사본)_442197246086737926]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[Country(2 복사본)_442197246086750215]' derivation='None' name='[none:Country(2 복사본)_442197246086750215:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country(복사본)_442197246086737926]' derivation='None' name='[none:Country(복사본)_442197246086737926:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]'>
+            <groupfilter count='20' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_442197246078742529]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(2 복사본)_442197246086750215:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]'>
+            <groupfilter count='20' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246080475139]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(복사본)_442197246086737926:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]</column>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+              <geometry column='[federated.156elov1fabnku1b99cwk0m1bimc].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B7F592C2-075B-4734-9EE2-E21A56DB9A4D}' />
+    </worksheet>
+    <worksheet name='시트 13 (5)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<가장 행복해진 TOP 20과 부패인식이 낮아진 TOP20 둘 다에 해당하는 국가>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country(2 복사본)' datatype='string' name='[Country(2 복사본)_442197246086750215]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country(복사본)' datatype='string' name='[Country(복사본)_442197246086737926]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[country]' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[Country(2 복사본)_442197246086750215]' derivation='None' name='[none:Country(2 복사본)_442197246086750215:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country(복사본)_442197246086737926]' derivation='None' name='[none:Country(복사본)_442197246086737926:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_442197246078742529]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(2 복사본)_442197246086750215:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]'>
+            <groupfilter count='20' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246080475139]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country(복사본)_442197246086737926:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]</column>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(2 복사본)_442197246086750215:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:Country(복사본)_442197246086737926:nk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+              <geometry column='[federated.156elov1fabnku1b99cwk0m1bimc].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[Latitude (generated)]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{EF84EB5B-9590-4DB2-BCEE-FCEF462B33EE}' />
+    </worksheet>
+    <worksheet name='시트 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;부패인식지수와 행복지수 간의 상관관계&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='상관계수' datatype='real' name='[Calculation_442197246074093568]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CORR([perceptions_of_corruption],[happiness_score])' />
+            </column>
+            <column-instance column='[happiness_score]' derivation='Avg' name='[avg:happiness_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[perceptions_of_corruption]' derivation='Avg' name='[avg:perceptions_of_corruption:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[perceptions_of_corruption]' derivation='None' name='[none:perceptions_of_corruption:qk]' pivot='key' type='quantitative' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_442197246074093568]' derivation='User' name='[usr:Calculation_442197246074093568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:perceptions_of_corruption:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:perceptions_of_corruption:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246074093568:qk]' />
+              <lod column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[avg:perceptions_of_corruption:qk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[avg:happiness_score:qk]</cols>
+      </table>
+      <simple-id uuid='{AFF0AC79-0AB2-4DA5-A555-1F28352B5CDF}' />
+    </worksheet>
+    <worksheet name='시트 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;국가 별 평균 행복지수와 부패인식지수 그리고 상관관계&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='상관계수' datatype='real' name='[Calculation_442197246074093568]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CORR([perceptions_of_corruption],[happiness_score])' />
+            </column>
+            <column-instance column='[happiness_score]' derivation='Avg' name='[avg:happiness_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[perceptions_of_corruption]' derivation='Avg' name='[avg:perceptions_of_corruption:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column-instance column='[perceptions_of_corruption]' derivation='Sum' name='[sum:perceptions_of_corruption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_442197246074093568]' derivation='User' name='[usr:Calculation_442197246074093568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156elov1fabnku1b99cwk0m1bimc].[avg:happiness_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156elov1fabnku1b99cwk0m1bimc].[avg:perceptions_of_corruption:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246074093568:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.156elov1fabnku1b99cwk0m1bimc].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.156elov1fabnku1b99cwk0m1bimc].[avg:happiness_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.156elov1fabnku1b99cwk0m1bimc].[sum:perceptions_of_corruption:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.156elov1fabnku1b99cwk0m1bimc].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{8139FED2-CA0E-4A57-95CA-CD3A7243DFC9}' />
+    </worksheet>
+    <worksheet name='시트 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;부패인식지수와 행복지수 간 상관계수&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='상관계수' datatype='real' name='[Calculation_442197246074093568]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CORR([perceptions_of_corruption],[happiness_score])' />
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_442197246074093568]' derivation='User' name='[usr:Calculation_442197246074093568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246074093568:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{94DDFB03-D038-40EF-B343-D85EB01EBA27}' />
+    </worksheet>
+    <worksheet name='시트 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;2018년과 2022년 간의 행복지수차&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_442197246078742529]' derivation='User' name='[usr:Calculation_442197246078742529:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]</cols>
+      </table>
+      <simple-id uuid='{7970A2CA-B872-46F8-9E1D-1D84DDF96E34}' />
+    </worksheet>
+    <worksheet name='시트 6 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<2022년과 2018년 간의 행복지수가 많이 차이나는 국가 TOP 20>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[행복점수차(복사본)_442197246081196036]' derivation='User' name='[usr:행복점수차(복사본)_442197246081196036:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='행복지수차(절대값)' datatype='real' name='[행복점수차(복사본)_442197246081196036]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ABS(SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END))' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246081196036]' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Afghanistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Albania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Algeria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Armenia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Azerbaijan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bahrain&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bangladesh&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Belarus&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Benin&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bolivia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bosnia and Herzegovina&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Botswana&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bulgaria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Burkina Faso&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cambodia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cameroon&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Chad&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Congo (Brazzaville)&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Costa Rica&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Croatia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cyprus&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Dominican Republic&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ecuador&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;El Salvador&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Estonia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ethiopia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;France&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Gabon&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Georgia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ghana&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Greece&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guatemala&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guinea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Honduras&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong S.A.R. of China&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Hungary&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Iceland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Iran&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Iraq&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ivory Coast&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Jamaica&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Jordan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kazakhstan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kenya&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kosovo&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwait&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kyrgyzstan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Laos&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Latvia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lesotho&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Liberia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Libya&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lithuania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Luxembourg&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Madagascar&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Malawi&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Malaysia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mali&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Malta&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mauritania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mauritius&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Moldova&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mongolia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Montenegro&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Morocco&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mozambique&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Myanmar&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Namibia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Nepal&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Nicaragua&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Niger&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Nigeria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;North Macedonia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Pakistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Palestinian Territories&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Panama&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Paraguay&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Peru&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Portugal&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Rwanda&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Senegal&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Serbia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sierra Leone&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Slovakia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Slovenia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sri Lanka&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Taiwan Province of China&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tajikistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tanzania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Thailand&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Togo&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tunisia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkmenistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Uganda&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ukraine&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Uzbekistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Venezuela&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Vietnam&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Yemen&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Zambia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Zimbabwe&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(복사본)_442197246081196036:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(복사본)_442197246081196036:qk]</cols>
+      </table>
+      <simple-id uuid='{8D66204A-76C7-4E92-AD5C-4F3883EA0981}' />
+    </worksheet>
+    <worksheet name='시트 6 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<2022년과 2018년 간의 부패인식지수가 많이 차이나는 국가 TOP 20>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column-instance column='[행복점수차(절대값)(복사본)_442197246082625541]' derivation='User' name='[usr:행복점수차(절대값)(복사본)_442197246082625541:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차(절대값)' datatype='real' name='[행복점수차(절대값)(복사본)_442197246082625541]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ABS(SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END))' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(절대값)(복사본)_442197246082625541]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(절대값)(복사본)_442197246082625541:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(절대값)(복사본)_442197246082625541:qk]</cols>
+      </table>
+      <simple-id uuid='{19712A0D-43FB-4589-9B51-D4AED6695A10}' />
+    </worksheet>
+    <worksheet name='시트 6 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;행복지수가 가장 많이 하락한 국가 TOP 20&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_442197246078742529]' derivation='User' name='[usr:Calculation_442197246078742529:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]'>
+            <groupfilter count='20' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_442197246078742529]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]</cols>
+      </table>
+      <simple-id uuid='{0F7DE77B-E8CB-41DC-934E-E07432C40731}' />
+    </worksheet>
+    <worksheet name='시트 6 (5)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;행복지수가 가장 많이 상승한 국가 TOP 20&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='행복지수차' datatype='real' name='[Calculation_442197246078742529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [happiness_score] END) - SUM(IF YEAR([year]) = 2018 THEN [happiness_score] END)' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Happiness Score' datatype='real' name='[happiness_score]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_442197246078742529]' derivation='User' name='[usr:Calculation_442197246078742529:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_442197246078742529]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:Calculation_442197246078742529:qk]</cols>
+      </table>
+      <simple-id uuid='{6E495424-2879-459F-A27F-23BC9AA89C31}' />
+    </worksheet>
+    <worksheet name='시트 6 (6)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;부패인식지수가 가장 많이 하락한 국가 TOP 20&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column-instance column='[행복점수차(복사본)_442197246080475139]' derivation='User' name='[usr:행복점수차(복사본)_442197246080475139:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]'>
+            <groupfilter count='20' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246080475139]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(복사본)_442197246080475139:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(복사본)_442197246080475139:qk]</cols>
+      </table>
+      <simple-id uuid='{F30F9F38-329A-4A1E-9E08-B28659F1D168}' />
+    </worksheet>
+    <worksheet name='시트 6 (7)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;부패인식지수차가 가장 많이 상승한 국가 TOP 20&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WHR_2018_2022' name='federated.156elov1fabnku1b99cwk0m1bimc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156elov1fabnku1b99cwk0m1bimc'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Hong Kong S.A.R. of China&quot;' value='&quot;홍콩&quot;' />
+                <semantic-value key='&quot;North Cyprus&quot;' value='&quot;키프로스&quot;' />
+                <semantic-value key='&quot;Taiwan Province of China&quot;' value='&quot;대만&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Perceptions Of Corruption' datatype='real' name='[perceptions_of_corruption]' role='measure' type='quantitative' />
+            <column-instance column='[행복점수차(복사본)_442197246080475139]' derivation='User' name='[usr:행복점수차(복사본)_442197246080475139:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column caption='부패인식지수차' datatype='real' name='[행복점수차(복사본)_442197246080475139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF YEAR([year]) = 2022 THEN [perceptions_of_corruption] END) - SUM(IF YEAR([year]) = 2018 THEN [perceptions_of_corruption] END)' />
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[행복점수차(복사본)_442197246080475139]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(복사본)_442197246080475139:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.156elov1fabnku1b99cwk0m1bimc].[none:country:nk]</rows>
+        <cols>[federated.156elov1fabnku1b99cwk0m1bimc].[usr:행복점수차(복사본)_442197246080475139:qk]</cols>
+      </table>
+      <simple-id uuid='{6D1B7723-4105-4B81-9C77-55C61BAD5BE9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.156elov1fabnku1b99cwk0m1bimc].[avg:perceptions_of_corruption:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{E843B670-F891-4858-80B3-20A38E3A4141}' />
+    </window>
+    <window class='worksheet' name='시트 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.156elov1fabnku1b99cwk0m1bimc].[yr:year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.156elov1fabnku1b99cwk0m1bimc].[avg:happiness_score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{0D2A29B3-B883-4086-8742-73D59F3F4C5B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D9E4C02-A43B-44C2-8422-7C2240504A02}' />
+    </window>
+    <window class='worksheet' name='시트 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37251A1E-F67C-4E51-A336-DE389F764DE3}' />
+    </window>
+    <window class='worksheet' name='시트 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2E2BF61-018E-4705-A4A4-4BD6A3673530}' />
+    </window>
+    <window class='worksheet' name='시트 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81AAD954-50A4-43F1-9321-3D087F441825}' />
+    </window>
+    <window class='worksheet' name='시트 6 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FCEE5DC2-45E7-4249-8BBE-AB3A8CB970B8}' />
+    </window>
+    <window class='worksheet' name='시트 6 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D70B0FA3-E872-4273-BE4C-CD9811140B2E}' />
+    </window>
+    <window class='worksheet' name='시트 6 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{352087D1-B927-4E74-B0C0-2EB7FD9DB49E}' />
+    </window>
+    <window class='worksheet' name='시트 6 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC9926EB-59F6-416C-9568-4C9C55EC5878}' />
+    </window>
+    <window class='worksheet' name='시트 6 (6)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42A44DD8-2178-47A3-AC03-6FB35C6C6CE6}' />
+    </window>
+    <window class='worksheet' name='시트 6 (7)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{10703652-70DD-42D9-BB95-F558027FC70B}' />
+    </window>
+    <window class='worksheet' name='시트 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{355E48D0-62A9-4565-9A7F-CBAA5580A210}' />
+    </window>
+    <window class='worksheet' name='시트 13 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E178A5C7-A9A9-4A47-84DF-A815A6CE45BF}' />
+    </window>
+    <window class='worksheet' name='시트 13 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B06CE05A-58D0-4AD8-810E-2F892995FE67}' />
+    </window>
+    <window class='worksheet' name='시트 13 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FB41BB92-4406-4C49-A492-07EE8AE2A8AA}' />
+    </window>
+    <window class='worksheet' name='시트 13 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{702C2566-CF48-4D8F-972A-D8EB2F352C99}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

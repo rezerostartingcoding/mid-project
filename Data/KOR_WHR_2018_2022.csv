@@ -1,0 +1,6 @@
+country,region,happiness_score,gdp_per_capita,social_support,healthy_life_expectancy,freedom_to_make_life_choices,generosity,perceptions_of_corruption,year
+South Korea,East Asia,5.875,1.266,1.204,0.955,0.244,0.175,0.051,2018
+South Korea,East Asia,5.895,1.301,1.219,1.036,0.159,0.175,0.056,2019
+South Korea,East Asia,5.872399807,1.245300651,1.133560538,1.022542596,0.25935635,0.170303866,0.094596282,2020
+South Korea,East Asia,5.845,1.403,0.758,0.801,0.353,0.134,0.135,2021
+South Korea,East Asia,5.935,1.851,0.886,0.841,0.414,0.111,0.176,2022
